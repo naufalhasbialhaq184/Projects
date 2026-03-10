@@ -1,0 +1,120 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+}
+body { 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+}
+.container { 
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border-radius: 20px; 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
+    width: 100%; 
+    max-width: 900px; 
+    padding: 40px; 
+    color: white; }
+.header { 
+    text-align: center; 
+    font-size: 2.5rem; 
+    margin-bottom: 30px; 
+    font-weight: 600; 
+    letter-spacing: 1px; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+ }
+.container_input { 
+    background: rgba(255, 255, 255, 0.05); 
+    padding: 25px; 
+    border-radius: 15px; 
+    margin-bottom: 30px;
+ }
+ .container_input span {
+    display: block; 
+    font-size: 1.2rem; 
+    margin-bottom: 15px; 
+    font-weight: 500; 
+}
+form { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 15px; 
+    align-items: flex-end;
+ }
+ input[type="text"], input[type="date"] { 
+    width: 100%; 
+    padding: 12px 15px; 
+    border-radius: 8px; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    background: rgba(255, 255, 255, 0.1); 
+    color: white; 
+    outline: none; 
+    transition: 0.3s;
+ }
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+input:focus { 
+    background: rgba(255, 255, 255, 0.2); 
+    border-color: #fff; 
+}
+
+button { 
+    background: #ff7eb3; 
+    background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%); 
+    color: white; 
+    border: none; 
+    padding: 12px 25px; 
+    border-radius: 8px; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+button:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(255, 117, 140, 0.4); 
+}
+.hapus_checked { 
+    margin-top: 20px; 
+    text-align: right; 
+}
+.hapus_checked button { 
+    background: rgba(255, 50, 50, 0.6); 
+}
+.containter_tugas { 
+    margin-top: 40px; 
+}
+.tabel_tugas { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 15px; 
+    background: rgba(255, 255, 255, 0.03); 
+    border-radius: 12px; 
+    overflow: hidden; 
+}
+.tabel_tugas th, .tabel_tugas td { 
+    padding: 15px; 
+    text-align: left; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+.tabel_tugas th { 
+    background: rgba(255, 255, 255, 0.1); 
+    text-transform: uppercase; 
+    font-size: 0.85rem; 
+    letter-spacing: 1px; 
+}
+.tabel_tugas tr:hover { 
+    background: rgba(255, 255, 255, 0.05); 
+}
+input[type="checkbox"] { 
+    width: 18px; 
+    height: 18px; 
+    cursor: pointer; }
