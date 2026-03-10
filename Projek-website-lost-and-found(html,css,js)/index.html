@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="header">Welcome To Lost and Found</div>
+        <div class="list_nemu" id="list_nemu">
+            <p class="font_list_head">List Barang Yang Ditemukan</p>
+            <div class="barang barang_nemu-1" id="barang_nemu-1">
+                <p>Nama Barang: Macbook Air M4</p>
+                <p>Deskripsi Barang: warna skyblue</p>
+                <p>Waktu Menemukan: 01/07/2026T18:00PM</p>
+                <p>Tempat Menemukan: Koica ITB Jatinangor</p>
+                <p>Contact Person Penemu: IG @nhasbialhaq184</p>
+            </div>
+        </div>
+        <div class="isi_nemu">
+            <p>Tempat Melaporkan Penemuan Barang</p>
+            <form action="" method="get" name="nemu_barang" class="form">
+                <label for="nama_barang">Nama barang</label> <input type="text" name="nama_barang"><br>
+                <label for="deskripsi_barang">Deskripsi Barang</label> <input type="text" name="deskripsi_barang"><br>
+                <label for="waktu_menemukan">Waktu Menemukan</label> <input type="datetime-local" name="waktu_menemukan"><br>
+                <label for="tempat_menemukan">Tempat Menemukan</label> <input type="text" name="tempat_menemukan"><br>
+                <label for="contact_person_penemu">Contact Person Penemu</label> <input type="text" name="contact_person_penemu"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="list_hilang" id="list_hilang">
+            <p class="font_list_head">List Barang Yang Kehilangan</p>
+            <div class="barang barang_hilang-1" id="barang_hilang-1">
+                <p>Nama Barang: Macbook Air M4</p>
+                <p>Deskripsi Barang: warna skyblue</p>
+                <p>Waktu Kehilangan: 01/07/2026T18:00PM</p>
+                <p>Tempat Kehilangan: Koica ITB Jatinangor</p>
+                <p>Contact Person Pelapor: IG @nhasbialhaq184</p>
+            </div>
+        </div>
+        <div class="isi_hilang">
+            <p>Tempat Melaporkan Kehilangan Barang</p>
+            <form action="" method="get" name="hilang_barang" class="form">
+                <label for="nama_barang">Nama barang</label> <input type="text" name="nama_barang"><br>
+                <label for="deskripsi_barang">Deskripsi Barang</label> <input type="text" name="deskripsi_barang"><br>
+                <label for="waktu_kehilangan">Waktu Kehilangan</label> <input type="datetime-local" name="waktu_kehilangan"><br>
+                <label for="tempat_kehilangan">Tempat Kehilangan</label> <input type="text" name="tempat_kehilangan"><br>
+                <label for="contact_person_kehilangan">Contact Person Kehilangan</label> <input type="text" name="contact_person_kehilangan"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
